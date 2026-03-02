@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Tool | PDFMaster Pro</title>
+    <meta name="description" content="Use PDFMaster Pro tools to process your PDF files quickly and securely." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-bar" aria-label="Tool page navigation">
+        <a class="brand" href="index.html" aria-label="PDFMaster Pro home">
+          <span class="brand-mark" aria-hidden="true">📄</span>
+          <div>
+            <strong class="brand-name" data-brand-name>PDFMaster Pro</strong>
+            <small class="brand-tagline">Smart PDF Tools for Smart People</small>
+          </div>
+        </a>
+        <a class="btn btn-secondary" href="index.html#tools">← Back to Tools</a>
+      </nav>
+    </header>
+
+    <main class="tool-main">
+      <section class="container tool-shell">
+        <header class="tool-header">
+          <p class="eyebrow">Tool workspace</p>
+          <h1 id="tool-title">PDF Tool</h1>
+          <p id="tool-description">Upload your files and process them securely.</p>
+        </header>
+
+        <section class="upload-panel">
+          <label class="dropzone" id="dropzone">
+            <input type="file" id="file-input" hidden />
+            <div>
+              <h2>Drag &amp; Drop your file here</h2>
+              <p>or click to choose a file from your device</p>
+              <span class="file-limit">Max file size: 100MB</span>
+            </div>
+          </label>
+
+          <div class="upload-actions">
+            <button id="upload-btn" class="btn btn-primary" disabled>Upload File</button>
+            <button id="process-btn" class="btn btn-secondary" disabled>Process File</button>
+            <button id="download-btn" class="btn btn-primary" disabled>Download Result</button>
+          </div>
+
+          <div class="loader" id="loader" aria-live="polite" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+            Processing file, please wait...
+          </div>
+
+          <div class="preview" id="preview" hidden>
+            <h3>File Preview</h3>
+            <p id="preview-name"></p>
+            <p id="preview-size"></p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>PDFMaster Pro</h3>
+          <p>Reliable PDF utilities designed for performance and modern teams.</p>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="mailto:contact@pdfmasterpro.example">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/tool.js"></script>
+  </body>
+</html>

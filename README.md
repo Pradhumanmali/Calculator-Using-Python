@@ -1,63 +1,46 @@
-🧮 Web-Based Calculator
+# PDFMaster Pro
 
-A fully functional Web Calculator built using Python (backend) and HTML, CSS, JavaScript (frontend).
-Project simple, fast, clean UI ke saath bana hua hai — perfect for learning web development + Python integration.
+A modern SaaS-style front-end for an online PDF tools platform inspired by services like iLovePDF and Smallpdf.
 
-🚀 Features
+## Highlights
 
-✔️ Web-based calculator (browser mein run hota hai)
+- Clean, minimal interface with premium card-based layout
+- Responsive design for mobile, tablet, and desktop
+- Hero section with strong CTA flow
+- Fully categorized PDF tools grid with dedicated tool links
+- Dynamic tool workspace page with:
+  - Drag-and-drop upload
+  - File size validation (100MB max)
+  - Processing loader
+  - Download placeholder action
+  - File preview panel
+- Dark mode toggle with theme persistence
+- Backend integration hooks prepared in JavaScript (`/api/upload`, `/api/process`, `/api/download`)
 
-✔️ Python backend for calculation logic
+## Structure
 
-✔️ HTML + CSS responsive UI
+- `index.html` – homepage with categorized tools and marketing sections
+- `tool.html` – reusable tool page template
+- `assets/css/styles.css` – full responsive theme and component styling
+- `assets/js/tools-data.js` – centralized tools catalog
+- `assets/js/main.js` – homepage rendering and UI interactions
+- `assets/js/tool.js` – tool page logic and backend hook placeholders
 
-✔️ JavaScript events for real-time input handling
+## Run Locally
 
-✔️ Supports Add, Subtract, Multiply, Divide
+Because this is a static front-end build, you can run it with any local HTTP server.
 
-✔️ Error handling & smooth UX
+Example:
 
-🛠️ Technologies Used
+```bash
+python -m http.server 8000
+```
 
-Python – backend logic / processing
+Then open:
 
-HTML5 – calculator UI structure
+- `http://localhost:8000/index.html`
 
-CSS3 – styling & responsive layout
+## Branding
 
-JavaScript (ES6) – button handling, API calls, UI interactions
-
-📂 Project Structure
-/web-calculator
- ├── static/
- │    ├── style.css
- │    └── script.js
- ├── templates/
- │    └── index.html
- └── app.py   (main Python backend)
-
-🔧 How to Run
-
-Install required packages (if any):
-
-pip install -r requirements.txt
-
-
-Start the Python server:
-
-python app.py
-
-
-Open in browser:
-
-http://localhost:5000
-
-💡 Enhancements
-
-Dark / Light mode
-
-Scientific calculator mode
-
-History panel
-
-Animations & improved UI
+- **Website Name:** PDFMaster Pro
+- **Tagline:** Smart PDF Tools for Smart People
